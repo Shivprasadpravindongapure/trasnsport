@@ -1,0 +1,78 @@
+/* Custom CSS */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Ensure overlay is on top of the background image */
+}
+/* Custom Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Light background for the navbar */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar:hover {
+    background-color: #e2e6ea; /* Darker shade on hover */
+}
+
+.nav-link {
+    color: #495057; /* Custom color for links */
+    padding: 10px 15px; /* Adjust padding for a larger clickable area */
+}
+
+.nav-link:hover {
+    background-color: #e2e6ea; /* Background change on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+.nav-item.active .nav-link {
+    color: #0d6efd; /* Active link color */
+    font-weight: bold; /* Bold active link */
+}
+
+
+.hero-section h1, .hero-section p {
+    z-index: 2; /* Ensure text is above the overlay */
+}
+
+.hero-section {
+    background: url('transport-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+}
+
+.hero-section p {
+    font-size: 20px;
+}
+
+.hero-section .btn-primary {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #343a40;
+}
